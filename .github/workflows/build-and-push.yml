@@ -31,4 +31,5 @@ jobs:
              --platform linux/amd64,linux/arm64 \
              --push \
              --tag ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.IMAGE_NAME }}:${VERSION:1} \
+             --tag ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.IMAGE_NAME }}:latest \
              .
